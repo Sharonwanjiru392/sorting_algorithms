@@ -15,8 +15,13 @@
  */
 typedef enum bool
 {
+<<<<<<< HEAD
         false = 0,
         true
+=======
+	false = 0,
+	true
+>>>>>>> Master
 } bool;
 
 /**
@@ -28,6 +33,7 @@ typedef enum bool
  */
 typedef struct listint_s
 {
+<<<<<<< HEAD
         const int n;
         struct listint_s *prev;
         struct listint_s *next;
@@ -50,5 +56,29 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
+=======
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
+} listint_t;
+
+/* Printing helper functions */
+void print_list(const listint_t *list);
+void print_array(const int *array, size_t size);
+
+/* Sorting algoritms */
+void bitonic_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
+void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
+void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size);
+void cocktail_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+void bubble_sort(int *array, size_t size);
+void insertion_sort_list(listint_t **list);
+>>>>>>> Master
 
 #endif /* SORT_H */
