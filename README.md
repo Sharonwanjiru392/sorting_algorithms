@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-0x1B. C - Sorting algorithms & Big O
-=======
+
+0x1B. C - Sorting algorithms & Big
+
 The 0x1B. C - Sorting algorithms & Big O project has been done by Sharon Wanjiru and Callistus Namurende.
 
 0. Bubble sort
@@ -41,4 +41,3 @@ function that sorts an array of integers in ascending order using the Quick sort
 
 12. Dealer
 function that sorts a deck of cards.
->>>>>>> Master
