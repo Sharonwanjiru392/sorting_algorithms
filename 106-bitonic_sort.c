@@ -1,7 +1,13 @@
+/*
+ * File: 106-bitonic_sort.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "sort.h"
 
 void swap_ints(int *a, int *b);
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+		char flow);
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 void bitonic_sort(int *array, size_t size);
 
@@ -27,7 +33,8 @@ void swap_ints(int *a, int *b)
  * @seq: The size of the sequence to sort.
  * @flow: The direction to sort in.
  */
-void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow)
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
+		char flow)
 {
 	size_t i, jump = seq / 2;
 
@@ -35,7 +42,7 @@ void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow)
 	{
 		for (i = start; i < start + jump; i++)
 		{
-						if ((flow == UP && array[i] > array[i + jump]) ||
+			if ((flow == UP && array[i] > array[i + jump]) ||
 			    (flow == DOWN && array[i] < array[i + jump]))
 				swap_ints(array + i, array + i + jump);
 		}
